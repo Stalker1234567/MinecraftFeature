@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "minecraftfeature",
+  "version": "${version}",
+
+  "name": "Minecraft Feature Mod",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "MIT",
+  "icon": "assets/minecraftfeature/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.minecraft.feature.minecraftfeature.client.MinecraftFeatureClient"
+    ],
+    "main": [
+      "com.minecraft.feature.minecraftfeature.MinecraftFeature"
+    ]
+  },
+
+  "mixins": [
+    "minecraftfeature.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric": "*",
+    "minecraft": "1.19.4"
+  }
+}
